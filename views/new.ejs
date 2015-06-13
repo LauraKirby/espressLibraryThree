@@ -1,0 +1,19 @@
+<% include partials/header %>
+  <h1>Add a new book</h1>
+  <form action="/books" class="form-inline" method="POST">
+    <div class="form-group">
+      <label for="title">Title: </label>
+      <input type="text" name="book[title]" id="title" class="form-control" autofocus>
+    </div>
+    <div class="form-group">
+      <label for="author">Author: </label>
+      <input type="text" name="book[author]" id="author" class="form-control" autofocus>
+    </div>
+    <div class="form-group">
+      <label for="year">Year: </label>
+      <input type="text" name="book[year]" id="year" class="form-control" autofocus>
+    </div>
+    <input type="submit" value="Create" class="btn btn-success">
+  </form>
+  <a href="/books">Go home</a>
+<% include partials/footer %>
